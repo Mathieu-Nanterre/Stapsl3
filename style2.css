@@ -1,0 +1,71 @@
+/* Reset basique */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #F57258; /* couleur de fond principale */
+    color: #fff;
+    padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Iframes généraux */
+iframe {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    padding: 5px;
+}
+
+/* Conteneur des iframes pour les aligner */
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; /* espace entre les iframes */
+}
+
+/* Iframe menu */
+iframe[name="fenetre1"] {
+    width: 20%;
+    height: 800px;
+}
+
+/* Iframe contenu */
+iframe[name="fenetre2"] {
+    width: 70%;
+    height: 800px;
+}
+
+/* Effet hover sur iframes */
+iframe:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+    }
+    iframe[name="fenetre1"],
+    iframe[name="fenetre2"] {
+        width: 90%;
+        height: 500px;
+    }
+}

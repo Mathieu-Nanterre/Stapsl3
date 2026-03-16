@@ -1,0 +1,64 @@
+/* Reset basique */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fef6f6;
+  color: #222;
+}
+
+/* Corps de page */
+body {
+  background-color: #ffe6e6; /* rose clair plus doux que pink */
+  padding: 40px;
+}
+
+/* Titres */
+h1 {
+  color: #d6336c; /* rose foncé */
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: #9e2a45;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #d6336c;
+  padding-bottom: 6px;
+}
+
+/* Liste */
+ul {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+li {
+  background-color: #ffd6e8;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgb(214 51 108 / 0.3);
+  transition: background-color 0.3s ease;
+}
+
+li:hover {
+  background-color: #d6336c;
+}
+
+li a {
+  text-decoration: none;
+  color: #6b0639;
+  font-weight: 600;
+  display: block;
+}
+
+li:hover a {
+  color: #ffe6f0;
+}
